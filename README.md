@@ -52,11 +52,14 @@ To view the test report:
 npx playwright show-report
 
 
-<img width="956" height="476" alt="Screenshot 2025-12-15 101323" src="https://github.com/user-attachments/assets/54b02a83-2877-496b-ae45-4d6ee377dc4b" />
 
-<img width="941" height="438" alt="Screenshot 2025-12-15 101345" src="https://github.com/user-attachments/assets/2b7a4205-efbb-4747-9e5e-81b1b055e5ce" />
+---
+<img width="948" height="429" alt="Screenshot 2025-12-15 101405" src="https://github.com/user-attachments/assets/f5bcf129-a7a8-4e26-b2e4-ced7a8d4fafd" />
+<img width="941" height="438" alt="Screenshot 2025-12-15 101345" src="https://github.com/user-attachments/assets/8ac66900-7c46-4f9c-879c-48516da6998d" />
+<img width="956" height="476" alt="Screenshot 2025-12-15 101323" src="https://github.com/user-attachments/assets/712d6a9d-9ae3-4046-8b2e-52cc2d6c4570" />
 
-<img width="948" height="429" alt="Screenshot 2025-12-15 101405" src="https://github.com/user-attachments/assets/63196dbc-1e17-4ab8-a61c-48b8d0bd9fc6" />
+
+
 
 
 
