@@ -1,0 +1,49 @@
+﻿[dotenv@17.2.3] injecting env (3) from .env -- tip: ≡ƒôí add observability to secrets: https://dotenvx.com/ops
+
+Running 1 test using 1 worker
+
+[1A[2K[dotenv@17.2.3] injecting env (0) from .env -- tip: ≡ƒ¢á∩╕Å  run anywhere with `dotenvx run -- yourcommand`
+
+[1A[2K[1/1] [chromium] ΓÇ║ tests\login.spec.ts:4:5 ΓÇ║ Verify Login to Automation Anywhere IDP
+[1A[2K[chromium] ΓÇ║ tests\login.spec.ts:4:5 ΓÇ║ Verify Login to Automation Anywhere IDP
+Navigating to login page...
+
+[1A[2KAttempting login with user: pavankumarps215@gmail.com
+
+[1A[2K  1) [chromium] ΓÇ║ tests\login.spec.ts:4:5 ΓÇ║ Verify Login to Automation Anywhere IDP ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoHaveValue[2m([22m[32mexpected[39m[2m)[22m failed
+
+    Locator:  locator('input[placeholder="*Email"]')
+    Expected: [32m"pavankumarps215@[7mgmail.com[27m"[39m
+    Received: [31m"pavankumarps215@"[39m
+    Timeout:  10000ms
+
+    Call log:
+    [2m  - Expect "toHaveValue" with timeout 10000ms[22m
+    [2m  - waiting for locator('input[placeholder="*Email"]')[22m
+    [2m    13 ├ù locator resolved to <input id="256:0" type="text" aria-describedby="" placeholder="*Email" class="textbox input" data-interactive-lib-uid="2" aria-labelledby="256:0-label" data-aura-rendered-by="260:0"/>[22m
+    [2m       - unexpected value "pavankumarps215@"[22m
+
+
+       at ..\pages\LoginPage.ts:54
+
+      52 |
+      53 |         // Verify input is filled
+    > 54 |         await expect(this.usernameInput).toHaveValue(username);
+         |                                          ^
+      55 |
+      56 |         // Wait for Next button to be enabled/interactive
+      57 |         await this.nextButton.waitFor({ state: 'visible' });
+        at LoginPage.login (C:\Users\User\automation anyware\pages\LoginPage.ts:54:42)
+        at C:\Users\User\automation anyware\tests\login.spec.ts:13:5
+
+    attachment #1: screenshot (image/png) ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+    test-results\login-Verify-Login-to-Automation-Anywhere-IDP-chromium\test-failed-1.png
+    ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+
+    Error Context: test-results\login-Verify-Login-to-Automation-Anywhere-IDP-chromium\error-context.md
+
+
+[1A[2K  1 failed
+    [chromium] ΓÇ║ tests\login.spec.ts:4:5 ΓÇ║ Verify Login to Automation Anywhere IDP ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ

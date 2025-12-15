@@ -1,0 +1,27 @@
+﻿[dotenv@17.2.3] injecting env (3) from .env -- tip: ≡ƒöÉ prevent committing .env to code: https://dotenvx.com/precommit
+SyntaxError: C:\Users\User\automation anyware\pages\LoginPage.ts: Unexpected reserved word 'await'. (16:8)
+
+[0m [90m 14 |[39m         [36mthis[39m[33m.[39musernameInput [33m=[39m page[33m.[39mlocator([32m'input[placeholder="*Email"]'[39m)[33m;[39m
+ [90m 15 |[39m         [90m// Wait for Next button to be enabled explicitly[39m
+[31m[1m>[22m[39m[90m 16 |[39m         [36mawait[39m [36mthis[39m[33m.[39mnextButton[33m.[39mwaitFor({ state[33m:[39m [32m'visible'[39m })[33m;[39m
+ [90m    |[39m         [31m[1m^[22m[39m
+ [90m 17 |[39m         [36mawait[39m expect([36mthis[39m[33m.[39mnextButton)[33m.[39mtoBeEnabled({ timeout[33m:[39m [35m10000[39m })[33m;[39m
+ [90m 18 |[39m
+ [90m 19 |[39m         [90m// Small pause -> Ensure app is calm (hydration complete)[39m[0m
+
+   at login.spec.ts:16
+
+  14 |
+  15 |     // Initial check: wait for network idle to ensure redirection happens
+> 16 |     await page.waitForLoadState('networkidle');
+     |        ^
+  17 |
+  18 |     // Log the title to debug
+  19 |     const title = await page.title();
+    at Object.<anonymous> (C:\Users\User\automation anyware\tests\login.spec.ts:2:1)
+
+Error: No tests found.
+Make sure that arguments are regular expressions matching test files.
+You may need to escape symbols like "$" or "*" and quote the arguments.
+
+[1A[2K

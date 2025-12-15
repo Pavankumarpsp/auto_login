@@ -1,0 +1,53 @@
+﻿[dotenv@17.2.3] injecting env (3) from .env -- tip: ≡ƒùé∩╕Å backup and recover secrets: https://dotenvx.com/ops
+
+Running 2 tests using 2 workers
+
+[1A[2K[dotenv@17.2.3] injecting env (0) from .env -- tip: Γ£à audit secrets and track compliance: https://dotenvx.com/ops
+
+[1A[2K[1/2] [chromium] ΓÇ║ tests\messageBox.spec.ts:20:9 ΓÇ║ Use Case 1: Message Box Task ΓÇ║ Create a Task Bot with Message Box
+[1A[2K[dotenv@17.2.3] injecting env (0) from .env -- tip: ΓÜÖ∩╕Å  write to custom object with { processEnv: myObject }
+
+[1A[2K[2/2] [chromium] ΓÇ║ tests\formUpload.spec.ts:21:9 ΓÇ║ Use Case 2: Form with Upload Flow ΓÇ║ Create a Form with File Upload
+[1A[2K  1) [chromium] ΓÇ║ tests\formUpload.spec.ts:21:9 ΓÇ║ Use Case 2: Form with Upload Flow ΓÇ║ Create a Form with File Upload 
+
+    Error: locator.waitFor: Target page, context or browser has been closed
+    Call log:
+    [2m  - waiting for locator('a').filter({ hasText: /^Automation$/ }).first() to be visible[22m
+
+
+       at ..\pages\AutomationPage.ts:22
+
+      20 |     async navigateToAutomation() {
+      21 |         // Use JS Click to bypass OneTrust overlay
+    > 22 |         await this.automationMenuLink.waitFor({ state: 'visible' });
+         |                                       ^
+      23 |         await this.automationMenuLink.evaluate((b) => (b as HTMLElement).click());
+      24 |         await this.page.waitForLoadState('domcontentloaded');
+      25 |     }
+        at AutomationPage.navigateToAutomation (C:\Users\User\automation anyware\pages\AutomationPage.ts:22:39)
+        at C:\Users\User\automation anyware\tests\formUpload.spec.ts:22:30
+
+
+[1A[2K  2) [chromium] ΓÇ║ tests\messageBox.spec.ts:20:9 ΓÇ║ Use Case 1: Message Box Task ΓÇ║ Create a Task Bot with Message Box 
+
+    Error: locator.waitFor: Target page, context or browser has been closed
+    Call log:
+    [2m  - waiting for locator('a').filter({ hasText: /^Automation$/ }).first() to be visible[22m
+
+
+       at ..\pages\AutomationPage.ts:22
+
+      20 |     async navigateToAutomation() {
+      21 |         // Use JS Click to bypass OneTrust overlay
+    > 22 |         await this.automationMenuLink.waitFor({ state: 'visible' });
+         |                                       ^
+      23 |         await this.automationMenuLink.evaluate((b) => (b as HTMLElement).click());
+      24 |         await this.page.waitForLoadState('domcontentloaded');
+      25 |     }
+        at AutomationPage.navigateToAutomation (C:\Users\User\automation anyware\pages\AutomationPage.ts:22:39)
+        at C:\Users\User\automation anyware\tests\messageBox.spec.ts:21:30
+
+
+[1A[2K  2 failed
+    [chromium] ΓÇ║ tests\formUpload.spec.ts:21:9 ΓÇ║ Use Case 2: Form with Upload Flow ΓÇ║ Create a Form with File Upload 
+    [chromium] ΓÇ║ tests\messageBox.spec.ts:20:9 ΓÇ║ Use Case 1: Message Box Task ΓÇ║ Create a Task Bot with Message Box 

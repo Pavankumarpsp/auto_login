@@ -1,0 +1,41 @@
+﻿[dotenv@17.2.3] injecting env (3) from .env -- tip: ≡ƒöÉ prevent committing .env to code: https://dotenvx.com/precommit
+
+Running 1 test using 1 worker
+
+[1A[2K[dotenv@17.2.3] injecting env (0) from .env -- tip: ≡ƒöä add secrets lifecycle management: https://dotenvx.com/ops
+
+[1A[2K[1/1] [chromium] ΓÇ║ tests\login.spec.ts:4:5 ΓÇ║ Verify Login to Automation Anywhere IDP
+[1A[2K[chromium] ΓÇ║ tests\login.spec.ts:4:5 ΓÇ║ Verify Login to Automation Anywhere IDP
+Navigating to login page...
+
+[1A[2KAttempting login with user: pavankumarps215@gmail.com
+
+
+[1A[2K  1) [chromium] ΓÇ║ tests\login.spec.ts:4:5 ΓÇ║ Verify Login to Automation Anywhere IDP ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+
+    TimeoutError: locator.waitFor: Timeout 20000ms exceeded.
+    Call log:
+    [2m  - waiting for locator('input[placeholder="Password"], input[type="password"]') to be visible[22m
+
+
+       at ..\pages\LoginPage.ts:68
+
+      66 |             // Updated password selector based on user image ("Password" placeholder)
+      67 |             const passwordSelector = this.page.locator('input[placeholder="Password"], input[type="password"]');
+    > 68 |             await passwordSelector.waitFor({ state: 'visible', timeout: 20000 });
+         |                                    ^
+      69 |             await passwordSelector.fill(password);
+      70 |
+      71 |             // Similar logic for Login button
+        at LoginPage.login (C:\Users\User\automation anyware\pages\LoginPage.ts:68:36)
+        at C:\Users\User\automation anyware\tests\login.spec.ts:13:5
+
+    attachment #1: screenshot (image/png) ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+    test-results\login-Verify-Login-to-Automation-Anywhere-IDP-chromium\test-failed-1.png
+    ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+
+    Error Context: test-results\login-Verify-Login-to-Automation-Anywhere-IDP-chromium\error-context.md
+
+
+[1A[2K  1 failed
+    [chromium] ΓÇ║ tests\login.spec.ts:4:5 ΓÇ║ Verify Login to Automation Anywhere IDP ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
